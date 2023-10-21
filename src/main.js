@@ -9,13 +9,9 @@ import Targeting from './components/Targeting.vue'
 import Behaviour from './components/Behavior.vue'
 
 const routes = [
+    
     {
         path: '/',
-        name: "All",
-        component: Type
-    },
-    {
-        path: '/type',
         name: 'Type',
         component: Type
     },
