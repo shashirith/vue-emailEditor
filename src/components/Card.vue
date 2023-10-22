@@ -18,7 +18,7 @@ import { RouterLink } from 'vue-router'
                     </div>
                     <div class="bg-[#efefef] rounded-b-[5px] rounded-[0px]">
     <!-- img -->
-    <img :src="src" style="width: 300px; height: 280px; ">
+    <img :src="src" style="width: 250px; height: 250px; ">
 </div>
                 </div>
                 <div>

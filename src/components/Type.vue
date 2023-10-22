@@ -10,8 +10,6 @@ const handleChange = (e) => {
     formData.type = e.target.value;
 }
 
-
-
 const data=[
     {
         name:"Embedded Form",
@@ -22,13 +20,13 @@ const data=[
     {
         name:"Landing Page",
         description:"Create a landing page with a form",
-        src: "../src/assets/embedded.png",
+        src: "../src/assets/landing.png",
         id:"2"
     },
     {
         name:"Popup Form",
         description:"Add a form that pops up as a box",
-        src: "../src/assets/embedded.png",
+        src: "../src/assets/pop_up.png",
         id:"3"
     }
 ]
@@ -42,7 +40,7 @@ const data=[
             <h1 class="font-[inter] text-[15px] font-normal text-[#b2b3bb]">What type of form would you like to create</h1>
         </div>
         <div class="flex flex-col md:flex-row  gap-[20px] justify-center items-center">
-            <FileType v-for="(item,i) in data" :name="item.name" :description="item.description" :src="item.src" :selected="selected" :id="item.id"/>
+            <FileType v-for="(item,i) in data"  :selected="selected" v-bind="item"/>
         </div>
         <div class="h-[1px] bg-black/20"></div>
         <div class="flex justify-end">

@@ -22,7 +22,6 @@ provide('formData', formData);
 watch(formData, (newValue, prevValue) => {
   console.log(newValue);
 })
-
 </script>
 
 <template>

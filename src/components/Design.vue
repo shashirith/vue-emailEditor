@@ -1,6 +1,7 @@
 <script setup>
 import { Icon } from '@iconify/vue';
 import Card from "./Card.vue";
+import { computed, reactive } from 'vue';
 const data=[
     {
         name:"Intro Bar",
@@ -35,6 +36,10 @@ const data=[
         src: "../src/assets/designs/8.png"
     },
 ]
+let searchQuery = "";
+const filteredData = computed(() => {
+  return data.filter(item => item.name.toLowerCase().includes(searchQuery.toLowerCase()));
+});
 </script>
 
 <template>
@@ -43,11 +48,11 @@ const data=[
             <div
                 class="w-fit flex flex-row items-center gap-[5px] border-solid border-[2px] p-[5px] rounded-[5px] border-black/20">
                 <Icon class="text-black/50" icon="tabler:search" />
-                <input class="outline-none font-[inter] text-sm" placeholder="Search Templates">
+                <input class="outline-none font-[inter] text-sm" placeholder="Search Templates" v-model="searchQuery">
             </div>
         </div>
         <div class="flex flex-row flex-wrap md:gap-[50px] justify-center md:justify-between">
-            <Card v-for="(item,i) in data" :key="i" :name="item.name" :src="item.src"/>
+            <Card v-for="(item,i) in filteredData" :key="i" v-bind="item"/>
         </div>
     </div>
 </template>
