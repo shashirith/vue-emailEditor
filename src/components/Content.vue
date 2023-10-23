@@ -3,18 +3,17 @@ import { Icon } from '@iconify/vue';
 import { ref, inject, onActivated, onDeactivated } from 'vue';
 import { EmailEditor } from 'vue-email-editor';
 import { useRouter, RouterLink } from 'vue-router';
-
+import { data } from '../design';
 const formData = inject('formData');
 const emailEditor = ref(null);
 const show = ref(null);
 const router = useRouter();
 const saveAndContinue = () => {
   saveDesign();
-
 }
 const editorLoaded = () => {
   // Pass your template JSON here
-  emailEditor.value.editor.loadDesign(formData["content"]);
+  emailEditor.value.editor.loadDesign(data);
 };
 const editorReady = () => {
   console.log(':ready')
@@ -64,7 +63,7 @@ onDeactivated(() => {
       </div>
     </div>
     <div class="editor">
-      <EmailEditor v-if="show" @ready="editorReady" ref="emailEditor" style="height: 100%;" />
+      <EmailEditor @load="editorLoaded" v-if="show" @ready="editorReady" ref="emailEditor" style="height: 100%;" />
     </div>
   </div>
 </template>

@@ -78,4 +78,3 @@ See the [example source](https://github.com/unlayer/vue-email-editor/tree/master
 - [Vue 3 Docs](https://vuejs.org/)
 - [Awesome Vue](https://github.com/vuejs/awesome-vue)
 - [Migration from v2](https://vitejs.dev/guide/migration.html)
-

@@ -1,16 +1,27 @@
 <script setup>
 import { Icon } from '@iconify/vue';
+import { useRouter } from 'vue-router';
+import { inject } from 'vue';
+
+const formData = inject('formData');
+
 defineProps({
     name: String,
     src: String
 })
-import { RouterLink } from 'vue-router'
+
+const router = useRouter();
+
+const handleChange = (name) => {
+    formData.design = name;
+    router.push('/content')
+}
+
 
 </script>
 
 <template>
-    <RouterLink  to="/content">
-        <div @click="handleDesignClick">
+        <div @click="() => handleChange(name)">
             <div>
                 <div class="drop-shadow-md">
                     <div class="bg-[#fff] rounded-t-[5px]">
@@ -27,5 +38,4 @@ import { RouterLink } from 'vue-router'
                 </div>
             </div>
         </div>
-    </RouterLink>
 </template>

@@ -9,9 +9,12 @@ import Targeting from './components/Targeting.vue'
 import Behaviour from './components/Behavior.vue'
 
 const routes = [
-    
     {
         path: '/',
+        redirect: '/type'
+    },
+    {
+        path: '/type',
         name: 'Type',
         component: Type
     },
@@ -35,6 +38,11 @@ const routes = [
         name: 'Behaviour',
         component: Behaviour
     },
+    { 
+        path: '/:pathMatch(.*)*', 
+        name: 'NotFound', 
+        redirect: '/type' 
+    }
 ]
 
 const router = createRouter({
