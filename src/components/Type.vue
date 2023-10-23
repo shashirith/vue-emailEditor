@@ -1,7 +1,9 @@
 <script setup>
-import { ref , inject, onUnmounted} from 'vue';
+import { ref , inject, onUnmounted, watch} from 'vue';
 import { RouterLink } from 'vue-router'
 import FileType from './FileType.vue';
+
+
 const selected = ref("");
 
 const formData = inject('formData');
@@ -9,6 +11,10 @@ const formData = inject('formData');
 const handleChange = (e) => {
     formData.type = e.target.value;
 }
+
+watch(formData, (n, p) => {
+    console.log(n, p)
+})
 
 const data=[
     {
@@ -40,7 +46,7 @@ const data=[
             <h1 class="font-[inter] text-[15px] font-normal text-[#b2b3bb]">What type of form would you like to create</h1>
         </div>
         <div class="flex flex-col md:flex-row  gap-[20px] justify-center items-center">
-            <FileType v-for="(item,i) in data"  :selected="selected" v-bind="item"/>
+            <FileType @change="handleChange" v-for="(item,i) in data"  :selected="selected" v-bind="item"/>
         </div>
         <div class="h-[1px] bg-black/20"></div>
         <div class="flex justify-end">

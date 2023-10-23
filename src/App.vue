@@ -10,12 +10,8 @@ const formData = reactive({
   type: "",
   design: "",
   content: null,
-  targeting: {
-    1: "",
-    2: "",
-    3: ""
-  },
-  behaviour: ""
+  targeting: null,
+  behaviour: null,
 })
 provide('formData', formData);
 
