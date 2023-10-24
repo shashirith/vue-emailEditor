@@ -6,6 +6,7 @@ import Type from './components/Type.vue'
 import Design from './components/Design.vue'
 import Content from './components/Content.vue'
 import Targeting from './components/Targeting.vue'
+import Success from './components/Success.vue'
 import Behaviour from './components/Behavior.vue'
 
 const routes = [
@@ -33,11 +34,18 @@ const routes = [
         name: 'Targeting',
         component: Targeting
     },
+   
     {
         path: '/behaviour',
         name: 'Behaviour',
         component: Behaviour
     },
+    {
+        path: '/success',
+        name: 'Success',
+        component: Success
+    },
+
     { 
         path: '/:pathMatch(.*)*', 
         name: 'NotFound', 

@@ -12,7 +12,8 @@ const formData = reactive({
   content: null,
   targeting: null,
   behaviour: null,
-})
+  success:null,
+}) 
 provide('formData', formData);
 
 watch(formData, (newValue, prevValue) => {
