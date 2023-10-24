@@ -301,7 +301,7 @@ The component includes the following functionalities:
 
 
 <div align="center">
-<img width="1440" alt="Behavior" src="https://github.com/shashirith/sendx-frontend-IEC2020069/assets/76678053/66ff8a7e-1061-4c8d-94f1-436f05891425">
+<img width="1440" alt="Behavior" src="https://github.com/shashirith/sendx-frontend-IEC2020069/assets/76678053/d5828410-939c-4803-a6bb-d9bc0c667811">
 </div>
 
 ## Success Page
