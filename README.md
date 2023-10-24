@@ -9,7 +9,10 @@
 - [Components](#components)
 - [Views](#views)
 - [Temporary api end point ](#temporary-api-end-point )
+- [Video Link](#video-link)
 - [Special Thanks](#special-thanks)
+
+
 
 ## About
 
@@ -336,6 +339,9 @@ This  emphasizes that the PWA is optimized for larger screens and not exclusivel
  <img width="634" alt="Screenshot 2023-10-23 at 5 09 16 PM" src="https://github.com/shashirith/sendx-frontend-IEC2020069/assets/76678053/43d402dd-8671-4181-beb0-bd22ab9a04e2">
 </div>
 
+# Video Link
+Here's a video showcasing its features:
+[Link to Google Drive](https://drive.google.com/file/d/1CY_6MeO0ng0IQ5-defRt4n2cTlQmU7uj/view?usp=drive_link)
 
 ## Temporary api end point  
 The main route of the server is set up to handle POST requests at '/data'. When a POST request is received, it extracts the data from the request body and then writes this data to a local JSON file named 'data.json'. If the data is saved successfully, the server responds with a status code of 200 and the message 'Data saved successfully.' In case of any errors during the saving process, it responds with a status code of 500 and the message 'Error saving data.'
