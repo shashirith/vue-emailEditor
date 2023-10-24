@@ -2,12 +2,12 @@
 import { useRoute } from 'vue-router';
 const route = useRoute();
 const routes = {
-    'Type': 1, 
-    'Design': 2, 
-    'Content': 3, 
-    'Targeting': 4, 
+    'Type': 1,
+    'Design': 2,
+    'Content': 3,
+    'Targeting': 4,
     'Behaviour': 5,
-    'Success': 6, 
+    'Success': 6,
 }
 </script>
 
@@ -19,7 +19,8 @@ const routes = {
         </div>
         <ol class="inline-flex items-center space-x-1 md:space-x-3">
             <li class="inline-flex items-center">
-                <a :style="{ color: routes[route.name] === 1 ? 'black' : (routes[route.name] >  1 ? 'rgb(37 99 235)' : 'rgb(107 114 128)') }" href="#"
+                <a :style="{ color: routes[route.name] === 1 ? 'black' : (routes[route.name] > 1 ? 'rgb(37 99 235)' : 'rgb(107 114 128)') }"
+                    href="#"
                     class="font-[inter] inline-flex items-center text-sm font-medium text-blue-600 dark:text-gray-400 dark:hover:text-white">
                     Type
                 </a>
@@ -31,7 +32,8 @@ const routes = {
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="m1 9 4-4-4-4" />
                     </svg>
-                    <a :style="{ color: routes[route.name] === 2 ? 'black' : (routes[route.name] >  2 ? 'rgb(37 99 235)' : 'rgb(107 114 128)') }" href="#"
+                    <a :style="{ color: routes[route.name] === 2 ? 'black' : (routes[route.name] > 2 ? 'rgb(37 99 235)' : 'rgb(107 114 128)') }"
+                        href="#"
                         class="font-[inter] ml-1 text-sm font-medium md:ml-2 dark:text-gray-400 dark:hover:text-white">Design</a>
                 </div>
             </li>
@@ -42,7 +44,8 @@ const routes = {
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="m1 9 4-4-4-4" />
                     </svg>
-                    <span :style="{ color: routes[route.name] === 3 ? 'black' : (routes[route.name] >  3 ? 'rgb(37 99 235)' : 'rgb(107 114 128)')}"
+                    <span
+                        :style="{ color: routes[route.name] === 3 ? 'black' : (routes[route.name] > 3 ? 'rgb(37 99 235)' : 'rgb(107 114 128)') }"
                         class="font-[inter] ml-1 text-sm font-medium md:ml-2 dark:text-gray-400">Content</span>
                 </div>
             </li>
@@ -53,7 +56,8 @@ const routes = {
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="m1 9 4-4-4-4" />
                     </svg>
-                    <span :style="{ color: routes[route.name] === 4 ? 'black' : (routes[route.name] >  4 ? 'rgb(37 99 235)' : 'rgb(107 114 128)') }"
+                    <span
+                        :style="{ color: routes[route.name] === 4 ? 'black' : (routes[route.name] > 4 ? 'rgb(37 99 235)' : 'rgb(107 114 128)') }"
                         class="font-[inter] ml-1 text-sm font-medium md:ml-2 dark:text-gray-400">Targeting</span>
                 </div>
             </li>
@@ -64,7 +68,8 @@ const routes = {
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="m1 9 4-4-4-4" />
                     </svg>
-                    <span :style="{ color: routes[route.name] === 5? 'black' : (routes[route.name] >  5 ? 'rgb(37 99 235)' : 'rgb(107 114 128)') }"
+                    <span
+                        :style="{ color: routes[route.name] === 5 ? 'black' : (routes[route.name] > 5 ? 'rgb(37 99 235)' : 'rgb(107 114 128)') }"
                         class="font-[inter] ml-1 text-sm font-medium md:ml-2 dark:text-gray-400">Behaviour</span>
                 </div>
             </li>
@@ -75,10 +80,10 @@ const routes = {
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="m1 9 4-4-4-4" />
                     </svg>
-                    <span :style="{ color: routes[route.name] === 6? 'black' : (routes[route.name] >  6 ? 'rgb(37 99 235)' : 'rgb(107 114 128)') }"
+                    <span
+                        :style="{ color: routes[route.name] === 6? 'black' : (routes[route.name] >  6 ? 'rgb(37 99 235)' : 'rgb(107 114 128)') }"
                         class="font-[inter] ml-1 text-sm font-medium md:ml-2 dark:text-gray-400">Success</span>
-                </div>
-            </li>
-        </ol>
-    </nav>
-</template>
+            </div>
+        </li>
+    </ol>
+</nav></template>
