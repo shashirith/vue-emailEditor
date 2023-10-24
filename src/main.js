@@ -2,12 +2,12 @@ import { createApp } from 'vue'
 import './style.css'
 import App from './App.vue'
 import {createRouter, createWebHistory} from 'vue-router'
-import Type from './components/Type.vue'
-import Design from './components/Design.vue'
-import Content from './components/Content.vue'
-import Targeting from './components/Targeting.vue'
-import Success from './components/Success.vue'
-import Behaviour from './components/Behavior.vue'
+import Type from './views/Type.vue'
+import Design from './views/Design.vue'
+import Content from './views/Content.vue'
+import Targeting from './views/Targeting.vue'
+import Success from './views/Success.vue'
+import Behaviour from './views/Behavior.vue'
 
 const routes = [
     {

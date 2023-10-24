@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "Workspace",
+			"path": ".."
+		},
+		{
+			"name": "sendx-copy",
+			"path": "../../sendx-copy"
+		}
+	],
+	"settings": {}
+}

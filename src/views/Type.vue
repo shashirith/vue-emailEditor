@@ -1,7 +1,7 @@
 <script setup>
 import { ref , inject, onUnmounted, watch} from 'vue';
 import { RouterLink } from 'vue-router'
-import FileType from './FileType.vue';
+import FileType from '../components/FileType.vue';
 
 
 const selected = ref("");

@@ -6,7 +6,7 @@ const formData = inject('formData');
 import axios from 'axios';
 
 const val = ref("4");
-const behaviourData = reactive({
+const successData = reactive({
     id: null,
     value: 4,
 })
@@ -30,23 +30,23 @@ function isNumeric(num){
 }
 
 
-watch(() => behaviourData.value,(newValue, prevValue) => {
+watch(() => successData.value,(newValue, prevValue) => {
     if(isNumeric(newValue) === false){
-        behaviourData.value = prevValue;
+        successData.value = prevValue;
     }
     if(newValue === ""){
         return;
     }
     if(newValue > 100){
-        behaviourData.value = prevValue;
+        successData.value = prevValue;
     }
     if (newValue < 1) {
-        behaviourData.value = 1;
+        successData.value = 1;
     }
 });
 
 const handleNext = () => {
-    formData.success = behaviourData;
+    formData.success = successData;
     makePostRequest()
 }
 
@@ -63,22 +63,22 @@ const handleNext = () => {
             </div>
             <div class="mt-[20px] flex flex-col gap-[10px]">
                 <div class="flex flex-row items-center">
-                    <input value="1" @change="(e) => behaviourData.id = e.target.value" name="t2" id="5" type="radio">
+                    <input value="1" @change="(e) => successData.id = e.target.value" name="t2" id="5" type="radio">
                     <label class="font-[inter] ml-[10px] text-[15px] leading-[15px]" for="5">Do nothing</label>
                 </div>
                 <div class="flex flex-row items-start">
-                    <input value="2" @change="(e) => behaviourData.id = e.target.value" name="t2" id="7" type="radio">
+                    <input value="2" @change="(e) => successData.id = e.target.value" name="t2" id="7" type="radio">
                     <label class="flex flex-row font-[inter] ml-[10px] text-[15px] leading-[15px]" for="10">
                         <div>
                             If the visitor has successfully completed the action or the pop-up has been shown
-                            <input :value="behaviourData.value" @input="(e) => behaviourData.value = e.target.value" class="outline-none shadow-md w-10 text-[15px] mr-[10px] rounded-md p-[5px]" type="text"
+                            <input :value="successData.value" @input="(e) => successData.value = e.target.value" class="outline-none shadow-md w-10 text-[15px] mr-[10px] rounded-md p-[5px]" type="text"
                                 >
                             times.
                         </div>
                     </label>
                 </div>
                 <div>
-                    <input value="3" @change="(e) => behaviourData.id = e.target.value" name="t2" id="6" type="radio">
+                    <input value="3" @change="(e) => successData.id = e.target.value" name="t2" id="6" type="radio">
                     <label class="font-[inter] ml-[10px] text-[15px] leading-[15px]" for="6">Redirect to URL</label>
                 </div>
             </div>
