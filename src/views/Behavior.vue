@@ -202,7 +202,7 @@ const handleNext = async () => {
                 <div>
                     <div>
                         <h1 class="font-[inter] font-medium">
-                            Show the popup when visitor:
+                            How often to show the popup
                         </h1>
                         <p class="text-black/40 font-[inter] mt-[10px]">
                             Set the period when you want to show the popup to the same visitor
