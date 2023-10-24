@@ -12,8 +12,8 @@ const formData = reactive({
   content: null,
   targeting: null,
   behaviour: null,
-  success:null,
-}) 
+  success: null,
+})
 provide('formData', formData);
 
 watch(formData, (newValue, prevValue) => {
@@ -27,7 +27,7 @@ watch(formData, (newValue, prevValue) => {
     <SubNav v-if="route.path !== '/content'" />
     <router-view v-slot="{ Component }">
       <keep-alive>
-        <component :is="Component" :formData = "formData" />
+        <component :is="Component" :formData="formData" />
       </keep-alive>
     </router-view>
   </div>
