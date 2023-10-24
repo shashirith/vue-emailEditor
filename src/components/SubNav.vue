@@ -6,7 +6,8 @@ const routes = {
     'Design': 2, 
     'Content': 3, 
     'Targeting': 4, 
-    'Behaviour': 5
+    'Behaviour': 5,
+    'Success': 6, 
 }
 </script>
 
