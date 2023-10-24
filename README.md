@@ -148,7 +148,7 @@ The navigation bar  offers a sleek and user-friendly interface with logo, naviga
 - `User Profile`: The user's profile image and quick-access icons, like search, notifications, and apps, are included in the navigation bar.
 
 <div align="center">
-  <img width="1411" alt="nav" src="https://github.com/shashirith/sendx-frontend-IEC2020069/assets/76678053/3407c6fa-5da2-4bfd-8547-437bd4b432d5">
+ <img width="1411" alt="nav" src="https://github.com/shashirith/sendx-frontend-IEC2020069/assets/76678053/356616e3-586c-4228-af24-11868db5f8b0">
 </div>
 
 ## Subnavigation Component
@@ -160,7 +160,7 @@ The component accepts the following properties:
 - `routes`: An object that maps section or step names to their respective positions.
 
 <div align="center">
-  <img width="1407" alt="subNav" src="https://github.com/shashirith/sendx-frontend-IEC2020069/assets/76678053/c9a5fadd-3ad2-482b-927a-9b17266d0882">
+  <img width="1437" alt="subnav" src="https://github.com/shashirith/sendx-frontend-IEC2020069/assets/76678053/6d5907a0-d5bb-4802-9050-67b7791fdb29">
 </div>
 
 ## FileType Component
@@ -175,8 +175,8 @@ The component accepts the following properties:
 - `fun`: A function to handle a change event.
 
 <div align="center">
-<img width="685" alt="Screenshot 2023-10-24 at 4 41 02 PM" src="https://github.com/shashirith/sendx-frontend-IEC2020069/assets/76678053/27307045-3f19-44d9-98aa-877e76aa2d7d">
- 
+<img width="236" alt="Screenshot 2023-10-24 at 11 53 22 PM" src="https://github.com/shashirith/sendx-frontend-IEC2020069/assets/76678053/b6a2de81-ea4e-49eb-821b-8379faa79aa2">
+
   The component styles the radio button with a blue border when it's selected and provides a clean, user-friendly interface for selecting options. When a user selects an option, 
  the `fun` function is called to handle the change event.
 </div>
@@ -189,7 +189,7 @@ The component accepts the following properties:
 - `src`: A string specifying the image source for the card.
 - The component uses Vue Router for navigation and provides a way to handle the click event to perform specific actions.
 <div align="center">
-  <img src="https://github.com/shashirith/sendx-frontend-IEC2020069/assets/76678053/654bb57b-5ff9-4117-99f2-0c22de76d44c" alt="Project Logo">
+<img width="274" alt="Screenshot 2023-10-24 at 4 53 53 PM" src="https://github.com/shashirith/sendx-frontend-IEC2020069/assets/76678053/6aa2d496-af3e-4a23-8e90-1b1c0eb85d19">
 
   When a user clicks on the card, the handleChange function is called to perform an action, such as updating form data and navigating to another view.
 </div>
@@ -211,7 +211,7 @@ The component includes the following functionalities:
 - The component watches the `formData` object for changes and logs the new and previous values.
 
 <div align="center">
-<img width="1440" alt="design" src="https://github.com/shashirith/sendx-frontend-IEC2020069/assets/76678053/18a15a73-6bcc-4565-8b2f-da82da7b9e8a">
+<img width="1440" alt="Screenshot 2023-10-24 at 11 58 52 PM" src="https://github.com/shashirith/sendx-frontend-IEC2020069/assets/76678053/836dae19-5efa-4e69-a261-d79877e612e1">
 </div>
 
 ## Design Page
@@ -242,7 +242,7 @@ The template page consists  a search input field and a grid of template cards.
 - Template Cards: These cards display template names and images. Each card is generated based on the filteredData computed property.
   
 <div align="center">
-<img width="1440" alt="design" src="https://github.com/shashirith/sendx-frontend-IEC2020069/assets/76678053/bb38a0fc-9848-4a8f-8a76-a70599ccdbcb">
+<img width="1440" alt="design" src="https://github.com/shashirith/sendx-frontend-IEC2020069/assets/76678053/32810f3b-3bd3-4452-80f5-ba6f8a9e61de">
 </div>
 
 ## Content Page
@@ -251,7 +251,7 @@ I have Used an excellent drag-n-drop email editor by Unlayer as a Vue wrapper co
 This is the most powerful and developer friendly visual email builder for your app.
 
 <div align="center">
- <img width="1440" alt="Screenshot 2023-10-23 at 5 09 16 PM" src="https://github.com/shashirith/sendx-frontend-IEC2020069/assets/76678053/f5560fb1-4e76-4830-b23f-8d9a8821dd4b">
+ <img width="1438" alt="Screenshot 2023-10-24 at 11 59 58 PM" src="https://github.com/shashirith/sendx-frontend-IEC2020069/assets/76678053/402185c1-ea9d-4bcc-b94e-15ebee7e7b87">
 </div>
 
 ### Methods
@@ -279,7 +279,8 @@ The component includes the following functionalities:
 - The `Continue` button enables users to proceed to the next step in the form creation process, which is setting the behavior for the form's appearance.
   
 <div align="center">
-<img width="1440" alt="targeting" src="https://github.com/shashirith/sendx-frontend-IEC2020069/assets/76678053/fb9a3433-b0bb-4ef0-9cb0-5ca99de8b9c3">
+  <img width="1440" alt="targeting" src="https://github.com/shashirith/sendx-frontend-IEC2020069/assets/76678053/d1ad4d75-ed77-46dc-9778-e25145c64f9f">
+  
 </div>
 
 ## Behaviour Page
@@ -301,7 +302,8 @@ The component includes the following functionalities:
 
 
 <div align="center">
-<img width="1440" alt="Behavior" src="https://github.com/shashirith/sendx-frontend-IEC2020069/assets/76678053/d5828410-939c-4803-a6bb-d9bc0c667811">
+<img width="1440" alt="Screenshot 2023-10-24 at 10 45 51 PM" src="https://github.com/shashirith/sendx-frontend-IEC2020069/assets/76678053/4d1b4cde-692a-4376-8953-732328a37759">
+
 </div>
 
 ## Success Page
@@ -324,7 +326,7 @@ The component includes the following functionalities:
 To use this Success Page component, integrate it into your Vue.js application to provide a customizable user experience after form submissions.
 
 <div align="center">
-<img width="1440" alt="success" src="https://github.com/shashirith/sendx-frontend-IEC2020069/assets/76678053/8c8664e9-fed1-465d-a0dc-909bf2b3637e">
+<img width="1440" alt="success" src="https://github.com/shashirith/sendx-frontend-IEC2020069/assets/76678053/b3541fde-02b8-47e5-bd9b-f8c02083b5d1">
 </div>
 
 ### Additional Information
@@ -336,7 +338,7 @@ All the component uses Vue Router to navigate between pages and makes POST reque
 This  emphasizes that the PWA is optimized for larger screens and not exclusively for mobile use. Feel free to further customize it based on your app's unique features and target audience.
 
 <div align="center">
- <img width="634" alt="Screenshot 2023-10-23 at 5 09 16 PM" src="https://github.com/shashirith/sendx-frontend-IEC2020069/assets/76678053/43d402dd-8671-4181-beb0-bd22ab9a04e2">
+ <img width="634" alt="Screenshot 2023-10-23 at 5 09 16 PM" src="https://github.com/shashirith/sendx-frontend-IEC2020069/assets/76678053/43bdce3a-6e8e-4296-81d9-541e9cb2fee4">
 </div>
 
 # Video Link
@@ -348,9 +350,37 @@ The main route of the server is set up to handle POST requests at '/data'. When 
 
 The server logs information to the console for tracking server activities, such as when it starts running. This server allows the client application to persist data by saving it to a local JSON file, providing a simple yet effective storage mechanism.
 
-<div align="center">
-  <img width="546" alt="file storage" src="https://github.com/shashirith/sendx-frontend-IEC2020069/assets/76678053/18b52d7a-033f-4d32-828f-b2a204c6adce">
-</div>
+```javascript
+import express from 'express';
+import fs from 'fs';
+import cors from 'cors';
+const app = express();
+const port = 3000; // Set your desired port number
+
+app.use(express.json());
+app.use(cors())
+
+app.post('/data', (req, res) => {
+  // Get the data from the request body
+  const data = req.body;
+    console.log(data);
+  // Save the data to a local file
+  fs.writeFile('data.json', JSON.stringify(data), (err) => {
+    if (err) {
+      console.error('Error saving data:', err);
+      res.status(500).send('Error saving data');
+    } else {
+      console.log('Data saved successfully');
+      res.status(200).send('Data saved successfully');
+    }
+  });
+});
+
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
+});
+
+```
 
 
 
