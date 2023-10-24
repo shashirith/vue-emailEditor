@@ -74,7 +74,8 @@ const routes = {
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="m1 9 4-4-4-4" />
                     </svg>
-                    <span class="font-[inter] ml-1 text-sm font-medium md:ml-2 dark:text-gray-400">Success</span>
+                    <span :style="{ color: routes[route.name] === 6? 'black' : (routes[route.name] >  6 ? 'rgb(37 99 235)' : 'rgb(107 114 128)') }"
+                        class="font-[inter] ml-1 text-sm font-medium md:ml-2 dark:text-gray-400">Success</span>
                 </div>
             </li>
         </ol>
