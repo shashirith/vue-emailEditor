@@ -1,4 +1,4 @@
-# SendX-Frontend
+# EmailEditor-Frontend
 ## Table of Contents
 - [About](#about)
 - [Features](#features)
@@ -16,9 +16,6 @@
 
 ## About
 
-<div align="center">
-  <img src="https://github.com/shashirith/sendx-frontend-IEC2020069/assets/76678053/67645d48-d283-4964-8014-24a1e4b6458f" alt="Project Logo">
-</div>
 
 The Vue.js Embedded Form Creator is a single-page application. With an intuitive user interface and a set of well-structured screens, this app streamlines the form creation process, allowing users to generate custom embedded forms seamlessly.
 
@@ -398,9 +395,6 @@ app.listen(port, () => {
 
 - **[Vite Migration Guide from V2](https://vitejs.dev/guide/migration.html)**: If you are migrating from Vite 2 to Vite, this guide provides the necessary steps and tips for a smooth transition.
 
-# Special Thanks
-
-I wish to extend my heartfelt gratitude to SendX for providing me with an invaluable opportunity to work on this assignment. This experience has significantly contributed to my growth, broadening my horizons and enhancing my knowledge and skills.
 
 ## About the Assignment
 
